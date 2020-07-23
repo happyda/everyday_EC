@@ -15,6 +15,10 @@ def shop():
 def cart():
     return render_template('cart.html')
 
+@app.route("/shop-single")
+def shop_single():
+    return render_template('shop-single.html')
+
 if __name__ == '__main__':
 
     app.run(debug=True, host='0.0.0.0')

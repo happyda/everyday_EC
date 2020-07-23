@@ -6,20 +6,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static',filename='fonts/icomoon/style.css') }} ">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }} ">
+  <link rel="stylesheet" href="{{ url_for('static',filename='fonts/flaticon/font/flaticon.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/magnific-popup.css') }} ">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/jquery-ui.css')}} ">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css')}} ">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.default.min.css')}} ">
 
 
-  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/aos.css') }} ">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }} ">
 
 </head>
 
@@ -34,7 +34,7 @@
         <div class="container">
           <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
           <form action="#" method="post">
-            <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
+            <input type="text" class="form-control" placeholder="???????????Enter?...">
           </form>
         </div>
       </div>
@@ -43,14 +43,14 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.html" class="js-logo-clone"><strong class="text-primary">Pharma</strong>tive</a>
+              <a href="{{ url_for('home')}}" class="js-logo-clone"><strong class="text-primary">Pharma</strong>tive</a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Store</a></li>
+                <li><a href="{{ url_for('home')}}">首頝</a></li>
+                <li><a href="shop.html">??</a></li>
                 <li class="has-children">
                   <a href="#">Products</a>
                   <ul class="dropdown">
@@ -91,7 +91,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 mb-0">
-            <a href="index.html">Home</a> <span class="mx-2 mb-0">/</span>
+            <a href="{{ url_for('home')}}">首頝</a> <span class="mx-2 mb-0">/</span>
             <strong class="text-black">Contact</strong>
           </div>
         </div>
