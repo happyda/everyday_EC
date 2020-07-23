@@ -69,8 +69,8 @@
                     
                   </ul>
                 </li>
-                <li><a href="about.html">關於</a></li>
-                <li><a href="contact.html">與我們連繫</a></li>
+                <li><a href=" {{ url_for('about') }} ">關於</a></li>
+                <li><a href=" {{ url_for('contact') }} ">與我們連繫</a></li>
               </ul>
             </nav>
           </div>
@@ -220,7 +220,7 @@
     
                 <div class="row">
                   <div class="col-md-12">
-                    <button class="btn btn-primary btn-lg btn-block" onclick="window.location='checkout.html'">確認付款</button>
+                    <button class="btn btn-primary btn-lg btn-block" onclick="window.location=' {{ url_for('check_out') }} '">確認付款</button>
                   </div>
                 </div>
               </div>
