@@ -147,7 +147,14 @@ a {
   letter-spacing: .2em;
   font-size: 35px;
   color: #000 !important;
-  font-weight: 900; }
+  font-weight: 900;
+}
+.site-logo>img {
+  /*  adjust Everydaymall logo size;調整天天LOGO大小 */
+  height: 50%;
+  width: 50%;
+  /* background-color: powderblue; */
+}
   .site-logo a:hover {
     text-decoration: none; }
 
