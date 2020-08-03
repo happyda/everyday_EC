@@ -34,7 +34,7 @@
         <div class="container">
           <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
           <form action="#" method="post">
-            <input type="text" class="form-control" placeholder="???????????Enter?...">
+            <input type="text" class="form-control" placeholder="輸入搜尋商品名稱再按下Enter鍵...">
           </form>
         </div>
       </div>
@@ -43,7 +43,8 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-             <a href="{{ url_for('home')}}" class="js-logo-clone"><strong class="text-primary">天天</strong>購物</a>
+              <a href="{{ url_for('home')}}" class="js-logo-clone">
+                <img src="{{ url_for('static',filename='images/logo.png') }} " alt="Site-Logo">
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
