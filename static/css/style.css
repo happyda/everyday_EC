@@ -522,6 +522,10 @@ a {
     color: #fff;
     font-size: 20px;
     line-height: 35px; }
+  .site-block-cover img {
+    max-width: auto;
+    max-height: auto;
+  }
   .site-blocks-cover .intro-text {
     font-size: 16px;
     color: #fff;
@@ -551,7 +555,13 @@ a {
       background: transparent;
       color: #fff; }
   .site-blocks-cover.overlay {
-    position: relative; }
+    position: relative; 
+    max-width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+  
+  }
     .site-blocks-cover.overlay:before {
       position: absolute;
       content: "";
